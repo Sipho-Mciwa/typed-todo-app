@@ -6,6 +6,6 @@ export type Todo = {
 
 
 export type TodoAppState =
-    | {appState: 'loading' | 'idle', filterState: 'idle', todosState: 'idle'}
-    | {appState: 'successful', filterState: 'filtered' | 'unfiltered', todosState: 'empty' | 'loaded'}
-    | {appState: 'error', filterState: 'idle', todosState: 'idle', errorMessage: string}
+    | {status: 'loading' | 'idle', filterStatus: 'idle', todosStatus: 'idle'}
+    | {status: 'successful', filterStatus: 'filtered' | 'unfiltered', todosStatus: 'empty' | 'loaded'}
+    | {status: 'error', filterStatus: 'idle', todosStatus: 'idle', errorMessage: string}
