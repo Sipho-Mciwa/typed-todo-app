@@ -13,7 +13,7 @@ function App() {
       case "successful":
         return (<p>Success!</p>);
       case "error":
-        return (<p>{app.errorMessage}</p>);
+        return (<p>{app.message}</p>);
 
       // This variable ensures exhaustive checking of the 'app.status' switch statement.
       default: {
