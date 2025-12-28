@@ -10,3 +10,9 @@ export type TodoAppState =
     | {status: 'loading', filterStatus: 'idle', todosStatus: 'idle'}
     | {status: 'successful', filterStatus: 'filtered' | 'unfiltered', todosStatus: 'empty' | 'loaded'}
     | {status: 'error', filterStatus: 'idle', todosStatus: 'idle', message: string}
+
+
+export type SuccessfulOverrieds = Partial<{
+    filterStatus: 'filtered' | 'unfiltered',
+    todosStatus: 'empty' | 'loaded'
+}>;

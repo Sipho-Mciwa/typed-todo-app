@@ -1,5 +1,5 @@
 import { useState } from "react"
-import type { TodoAppState } from "./types/todo.types"
+import type { TodoAppState } from "./state/types"
 
 function App() {
   const [app, setApp] = useState<TodoAppState>({status: 'idle', filterStatus: 'idle', todosStatus: 'idle'});

@@ -1,5 +1,5 @@
 import type { TodoAction } from "./actions";
-import type { TodoAppState } from "./types/todo.types";
+import type { TodoAppState } from "./types";
 
 
 
@@ -28,6 +28,7 @@ export function reducer(state: TodoAppState, action: TodoAction): TodoAppState {
         case "successful": {
             switch (action.type) {
                 case "TODO_ADDED":
+                    console.log('here?')
                     return ({status: 'successful', filterStatus: 'unfiltered', todosStatus: 'loaded'});
                 case "TODO_REMOVED":
                     return ({status: 'successful', filterStatus: 'unfiltered', todosStatus: 'empty'});
