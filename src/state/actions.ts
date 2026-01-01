@@ -1,4 +1,4 @@
-import type { Todo } from "./types/todo.types";
+import type { Todo } from "./types";
 
 export type TodoAction =
   | { type: 'LOAD_TODOS_REQUESTED' }
@@ -7,5 +7,5 @@ export type TodoAction =
   | { type: 'TODO_ADDED'; todo: Todo }
   | { type: 'TODO_REMOVED'; todoId: number }
   | { type: 'TODO_TOGGLED'; todoId: number }
-  | { type: 'FILTER_CHANGED'; filter: 'all' | 'completed' | 'pending' };
+  | { type: 'FILTER_CHANGED'; filter: 'all' | 'completed' | 'pending'};
 
